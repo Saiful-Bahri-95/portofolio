@@ -1,6 +1,6 @@
 
   (function ($) {
-  
+
   "use strict";
 
     // PRE LOADER
@@ -27,7 +27,23 @@
       }, 300);
   }
 });
-    
+
+  // RESET FORM SETELAH SUBMIT
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contactEmail');
+
+    form.addEventListener('submit', function (e) {
+      // Hanya jika kamu tidak ingin form reload
+      // e.preventDefault();
+
+      // Tunggu 1 detik sebelum reset (beri waktu kirim ke Formspree)
+      setTimeout(() => {
+        form.reset();
+      }, 1000);
+    });
+  });
+
   })(window.jQuery);
+
 
 
