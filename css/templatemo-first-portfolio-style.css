@@ -150,6 +150,7 @@ strong {
   background: var(--about-color);
   border-radius: var(--border-radius-small);
   padding: 10px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.849);
 }
 
 
@@ -271,6 +272,7 @@ strong {
   color: var(--white-color);
   font-weight: var(--font-weight-bold);
   padding: 12px 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.849);
 }
 
 .custom-btn:hover {
@@ -467,7 +469,7 @@ strong {
 
 
 /*---------------------------------------
-  HERO              
+  HERO
 -----------------------------------------*/
 .hero {
   background: var(--custom-color);
@@ -542,7 +544,7 @@ strong {
 
 
 /*---------------------------------------
-  ABOUT              
+  ABOUT
 -----------------------------------------*/
 .profile-thumb {
   border: 1px solid var(--border-color);
@@ -576,6 +578,7 @@ strong {
 
 .about-image {
   border-radius: var(--border-radius-medium);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.913);
 }
 
 .about-thumb {
@@ -640,6 +643,7 @@ strong {
   background: var(--white-color);
   border: 2px solid transparent;
   border-radius: var(--border-radius-medium);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.699);
   position: relative;
   overflow: hidden;
   margin-bottom: 24px;

@@ -1,21 +1,21 @@
 const projects = [
   {
-    title: "Project A",
-    description: "Deskripsi singkat tentang Project A.",
-    image: "image/hexashopp.JPG",
-    link: "./a_shopping/index.html"
+    title: "Hexa Shopp",
+    description: "HexaShop is an ecommerce HTML CSS template for your online stores. This layout is based on Bootstrap v4.5.2 CSS framework.",
+    image: "image/hexa.jpg",
+    link: "./a_shopping/hexa/index.html"
   },
   {
-    title: "Project B",
-    description: "Deskripsi singkat tentang Project B.",
-    image: "image/img2.jpg",
-    link: "#"
+    title: "Food Mart",
+    description: "Foodmart is an eCommerce website template for any grocery store, It is suitable for any eCommerce store, online shopping website.",
+    image: "image/foodmart.jpg",
+    link: "./a_shopping/foodmart/index.html"
   },
   {
-    title: "Project C",
-    description: "Deskripsi singkat tentang Project C.",
-    image: "image/img3.jpg",
-    link: "#"
+    title: "Furry",
+    description: "Furry is a HTML Bootstrap 5 website template for pet-related e-commerce stores. It is mainly specially designed for pet stores. ",
+    image: "image/furry.jpg",
+    link: "./a_shopping/furry/index.html"
   }
 ];
 
