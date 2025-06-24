@@ -153,3 +153,18 @@ body.branding {
     padding: 15px 5px;
   }
 }
+
+/* ===== Jika hanya ada 1 card ===== */
+.card-container:has(.card:nth-child(2)) {
+  justify-content: initial; /* ada lebih dari 1 card, grid default */
+}
+
+.card-container:has(.card):not(:has(.card:nth-child(2))) {
+  display: flex;
+  justify-content: center;
+}
+
+.card-container:has(.card):not(:has(.card:nth-child(2))) .card {
+  max-width: 400px;
+  width: 90%;
+}

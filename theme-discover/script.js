@@ -8,21 +8,21 @@ const projectsByTheme = {
   website: [
     {
       title: "e-Learning",
-      description: "Elearning is a education website template built with Bootstrap 5. It is a clean, modern, and free eLearning HTML template with a beautiful design and unique & awesome features.",
+      description: "Elearning is a education website template built with Bootstrap 5. It is a clean, modern, and free eLearning HTML template with a beautiful design and unique & awesome features. This free bootstrap template is 100% responsive.",
       image: "image/elearning.jpg",
       link: "../a-website/elearning/index.html"
     },
     {
-      title: "e-Learning",
-      description: "Elearning is a free education website template built with Bootstrap 5. It is a clean, modern, and free eLearning HTML template with a beautiful design and unique & awesome features.",
-      image: "image/elearning.jpg",
-      link: "../a-website/elearning/index.html"
+      title: "Finance Business",
+      description: "Finance HTML Template can be used as one-page or multiple pages depending on your business needs. It has a full-page image slider and green-yellow color theme. Total 4 HTML pages included contact form and Google Maps.",
+      image: "image/finance.jpg",
+      link: "../a-website/finance/index.html"
     },
     {
-      title: "e-Learning",
-      description: "Elearning is a free education website template built with Bootstrap 5. It is a clean, modern, and free eLearning HTML template with a beautiful design and unique & awesome features.",
-      image: "image/elearning.jpg",
-      link: "../a-website/elearning/index.html"
+      title: "Start Up",
+      description: "StartupBusiness is a Bootstrap HTML5 business website template. It is the best site skin for startups, small businesses, and other similar kinds. If you want to make a striking website quickly, then StartupBusiness is the right choice.",
+      image: "image/startup.jpg",
+      link: "../a-website/startup/index.html"
     },
   ],
   portofolio: [
@@ -39,11 +39,17 @@ const projectsByTheme = {
       link: "../a-portofolio/johnson/index.html"
     },
     {
-      title: "Kelly",
-      description: "Elearning is a free education website template built with Bootstrap 5. It is a clean, modern, and free eLearning HTML template with a beautiful design and unique & awesome features.",
-      image: "image/kelly.jpg",
-      link: "../a-portofolio/kelly/index.html"
+      title: "Reflux",
+      description: "Reflux is one-page scrolling template with a sticky left side bar. This is a Bootstrap 4 CSS layout suitable for personal portfolio or gallery website. Main menu has red color background and white color highlight.",
+      image: "image/reflux.jpg",
+      link: "../a-portofolio/reflux/index.html"
     },
+    {
+      title: "Stimulus",
+      description: "Stimulus HTML resume template is a personal website layout with metro style blocks of contents. This theme is great for your portfolio page with your background information. You can quickly customize it to fit your needs.",
+      image: "image/stimulus.jpg",
+      link: "../a-portofolio/stimulus/index.html"
+    }
   ],
   ecommerce: [
     {
@@ -104,7 +110,7 @@ projects.forEach(project => {
     <div class="card-content">
       <h3 class="card-title">${project.title}</h3>
       <p class="card-description">${project.description}</p>
-      <a href="${project.link}" class="card-button" target="_blank">View Project</a>
+      <a href="${project.link}" class="card-button" target="_blank">Live Preview</a>
     </div>
   `;
   container.appendChild(card);
