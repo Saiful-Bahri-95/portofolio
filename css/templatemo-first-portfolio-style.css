@@ -316,6 +316,7 @@ strong {
 .is-sticky .navbar .container {
   background: var(--white-color);
   box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
+  border: 2px solid #11d7b3;
 }
 
 .is-sticky .navbar-brand,
