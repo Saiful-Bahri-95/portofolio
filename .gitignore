@@ -1,0 +1,6 @@
+/secret/
+config.php
+.log
+*.tmp
+.DS_Store
+*.bak
