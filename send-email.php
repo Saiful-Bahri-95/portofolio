@@ -17,8 +17,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->SMTPAuth   = true;
         $mail->Username   = $config['email'];
         $mail->Password   = $config['password'];
-        $mail->SMTPSecure = 'tls';
-        $mail->Port       = 587;
+        $mail->SMTPSecure = 'ssl';  // GUNAKAN ssl sesuai konfigurasi
+        $mail->Port       = 465;
 
         $mail->setFrom('contact@saiful-bahri.pro', 'Saiful Bahri Website');
         $mail->addAddress('contact@saiful-bahri.pro');
