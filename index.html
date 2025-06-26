@@ -88,7 +88,7 @@
         .then(html => document.getElementById(`section_${id}`).innerHTML = html);
         if (id === "5") {
             const script = document.createElement("script");
-            script.src = "js/form-handler.js";
+            script.src = "js/form-handler.min.js";
             script.onload = () => {
                 console.log("✅ form-handler.js dimuat dari index.html");
                 initializeFormHandler(); // Panggil fungsi setelah form tersedia
