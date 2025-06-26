@@ -86,6 +86,12 @@
       fetch(`sections/section_${id}.html`)
         .then(res => res.text())
         .then(html => document.getElementById(`section_${id}`).innerHTML = html);
+        if (id === "5") {
+        // Inisialisasi form handler setelah section_5 dimuat
+        const script = document.createElement("script");
+        script.src = "js/form-handler.js";
+        document.body.appendChild(script);
+      }
     });
   </script>
 
@@ -96,5 +102,6 @@
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/magnific-popup-options.js"></script>
   <script src="js/custom.js"></script>
+  <script src="js/form-handler.js"></script>
 </body>
 </html>
