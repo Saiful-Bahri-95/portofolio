@@ -1,9 +1,15 @@
-document.addEventListener("DOMContentLoaded", function () {
+function initializeFormHandler() {
   const form = document.getElementById("contactEmail");
-  if (!form) return;
+  if (!form) {
+    console.log("⛔ Form #contactEmail tidak ditemukan");
+    return;
+  }
+
+  console.log("📨 Form ditemukan dan listener aktif");
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
+    console.log("🚫 Form submit dicegah");
 
     const formData = new FormData(form);
 
@@ -25,4 +31,4 @@ document.addEventListener("DOMContentLoaded", function () {
       console.error(error);
     });
   });
-});
+}
