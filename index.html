@@ -82,10 +82,8 @@
         const script = document.createElement("script");
         script.src = "js/form-handler.min.js";
         script.onload = () => {
-          console.log("✅ form-handler.js dimuat dari index.html");
           initializeFormHandler();
         };
-        script.onerror = () => console.error("⛔ Gagal memuat form-handler.js");
         document.body.appendChild(script);
       }
     });
