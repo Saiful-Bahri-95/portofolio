@@ -530,7 +530,7 @@ strong {
   z-index: 22;
   top: 0;
   width: 100%;
-  min-width: 550px;
+   /* min-width: 550px; */ /* Opsional: komentari jika ingin menyimpan referensi */
   border-radius: round(50%);
 }
 
@@ -1186,6 +1186,15 @@ strong {
     line-height: 35.5px;
   }
 
+  .hero {
+    padding-top: 50px;
+    padding-bottom: 272px;
+  }
+
+  .hero-text {
+    margin-bottom: 60px; /* Kurangi dari 120px */
+  }
+
   .hero-image-wrap {
     width: 300px;
     height: 300px;
@@ -1193,6 +1202,33 @@ strong {
 
   .hero-image {
     min-width: inherit;
+  }
+
+  .profile-small-title {
+    border-right: 1px solid var(--border-color);
+    color: var(--secondary-color);
+    font-weight: var(--font-weight-bold);
+    min-width: 95px;
+    margin-right: 5px;
+    padding: 15px 10px;
+    display: inline-block;
+  }
+
+  .about-thumb {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .services-thumb {
+    margin-bottom: 20px;
+    padding-bottom: 80px;
+  }
+
+  .section-padding {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 5px;
+    padding-left: 5px;
   }
 }
 
