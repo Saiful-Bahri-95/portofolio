@@ -9,93 +9,85 @@
   <link href="css/bootstrap-icons.css" rel="stylesheet" />
   <link href="css/magnific-popup.css" rel="stylesheet" />
   <link href="css/templatemo-first-portfolio-style.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
 
   <section class="preloader">
-            <div class="spinner">
-                <span class="spinner-rotate"></span>
-            </div>
+    <div class="spinner">
+      <span class="spinner-rotate"></span>
+    </div>
   </section>
 
-  <nav class="navbar navbar-expand-lg">
-            <div class="container">
+  <nav class="navbar navbar-expand-lg" data-aos="fade-down">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+      <a href="index.html" class="navbar-brand mx-auto mx-lg-0">Saiful Bahri</a>
 
-                <a href="index.html" class="navbar-brand mx-auto mx-lg-0">Saiful Bahri</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-lg-5">
+          <li class="nav-item"><a class="nav-link click-scroll" href="#section_1">Home</a></li>
+          <li class="nav-item"><a class="nav-link click-scroll" href="#section_2">About</a></li>
+          <li class="nav-item"><a class="nav-link click-scroll" href="#section_3">Projects</a></li>
+          <li class="nav-item"><a class="nav-link click-scroll" href="#section_4">Galery</a></li>
+          <li class="nav-item"><a class="nav-link click-scroll" href="#section_5">Contact</a></li>
+        </ul>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-lg-5">
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_1">Home</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_2">About</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3">Projects</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_4">Galery</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_5">Contact</a>
-                        </li>
-                    </ul>
-
-                    <div class="d-lg-flex align-items-center d-none ms-auto">
-                        <i class="navbar-icon bi-whatsapp me-3" href="https://wa.me/6289612893834"></i>
-                        <a class="custom-btn btn" href="#section_5">
-                            +62-896-1289-3834
-                        </a>
-                    </div>
-                </div>
-
-            </div>
+        <div class="d-lg-flex align-items-center d-none ms-auto">
+          <i class="navbar-icon bi-whatsapp me-3"></i>
+          <a class="custom-btn btn" href="#section_5">+62-896-1289-3834</a>
+        </div>
+      </div>
+    </div>
   </nav>
 
   <main>
-    <div id="section_1"></div>
-    <div id="section_2"></div>
-    <div id="section_3"></div>
-    <div id="section_4"></div>
-    <div id="section_5"></div>
+    <div id="section_1" data-aos="fade-up"></div>
+    <div id="section_2" data-aos="fade-up"></div>
+    <div id="section_3" data-aos="fade-up"></div>
+    <div id="section_4" data-aos="fade-up"></div>
+    <div id="section_5" data-aos="fade-up"></div>
   </main>
 
-    <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-12">
-                        <div class="copyright-text-wrap">
-                            <p class="mb-0 copyright-text">Copyright © 2025 Saiful Bahri</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </footer>
+  <footer class="site-footer" data-aos="fade-up">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-12">
+          <div class="copyright-text-wrap">
+            <p class="mb-0 copyright-text">Copyright © 2025 Saiful Bahri</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script>
     ["1","2","3","4","5"].forEach(id => {
       fetch(`sections/section_${id}.html`)
         .then(res => res.text())
-        .then(html => document.getElementById(`section_${id}`).innerHTML = html);
-        if (id === "5") {
-            const script = document.createElement("script");
-            script.src = "js/form-handler.min.js";
-            script.onload = () => {
-                console.log("✅ form-handler.js dimuat dari index.html");
-                initializeFormHandler(); // Panggil fungsi setelah form tersedia
-            };
-            script.onerror = () => console.error("⛔ Gagal memuat form-handler.js");
-            document.body.appendChild(script);
-        }
+        .then(html => {
+          document.getElementById(`section_${id}`).innerHTML = html;
+          AOS.refresh();
+        });
+
+      if (id === "5") {
+        const script = document.createElement("script");
+        script.src = "js/form-handler.min.js";
+        script.onload = () => {
+          console.log("✅ form-handler.js dimuat dari index.html");
+          initializeFormHandler();
+        };
+        script.onerror = () => console.error("⛔ Gagal memuat form-handler.js");
+        document.body.appendChild(script);
+      }
     });
   </script>
 
@@ -106,5 +98,12 @@
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/magnific-popup-options.js"></script>
   <script src="js/custom.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
