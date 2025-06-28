@@ -913,12 +913,6 @@ strong {
   font-size: var(--copyright-font-size);
 }
 
-.copyright-text {
-  border-right: 1px solid var(--border-color);
-  padding-right: 25px;
-  margin-right: 20px;
-}
-
 .copyright-text-wrap a {
   font-weight: var(--font-weight-bold);
 }
@@ -1229,6 +1223,13 @@ strong {
     padding-bottom: 25px;
     padding-right: 5px;
     padding-left: 5px;
+  }
+
+  .site-footer {
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
   }
 }
 
