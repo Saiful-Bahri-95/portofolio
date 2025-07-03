@@ -103,7 +103,7 @@ const projects = projectsByTheme[theme] || [];
 const container = document.getElementById("project-container");
 
 projects.forEach((project, index) => {
-  const delay = index * 1; // Delay for animation effect
+  const delay = index * 0.2; // Delay for animation effect
   const card = document.createElement("div");
   card.className = "card";
   card.style.animationDelay = `${delay}s`;
