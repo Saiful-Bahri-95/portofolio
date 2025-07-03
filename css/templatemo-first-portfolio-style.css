@@ -1144,6 +1144,104 @@ strong {
     margin-right: 12px;
     margin-left: 12px;
   }
+
+    h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 22px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  .custom-btn,
+  .navbar .custom-btn {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .navbar-icon {
+    font-size: var(--copyright-font-size);
+    width: 35.5px;
+    height: 35.5px;
+    line-height: 35.5px;
+  }
+
+  .hero {
+    padding-top: 120px;
+    padding-bottom: 285px;
+    background: var(--custom-color);
+    min-height: 70vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-title {
+    font-size: 30px;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .hero-text {
+    margin-bottom: 60px; /* Kurangi dari 120px */
+  }
+
+  .hero-image-wrap {
+    width: 300px;
+    height: 300px;
+  }
+
+  .hero-image {
+    min-width: inherit;
+  }
+
+  .profile-small-title {
+    border-right: 1px solid var(--border-color);
+    color: var(--secondary-color);
+    font-weight: var(--font-weight-bold);
+    min-width: 95px;
+    margin-right: 5px;
+    padding: 15px 10px;
+    display: inline-block;
+  }
+
+  .about-thumb {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .services-thumb {
+    margin-bottom: 20px;
+    padding-bottom: 80px;
+  }
+
+  .section-padding {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .site-footer {
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -1181,8 +1279,20 @@ strong {
   }
 
   .hero {
-    padding-top: 50px;
-    padding-bottom: 272px;
+    padding-top: 120px;
+    padding-bottom: 285px;
+    background: var(--custom-color);
+    min-height: 70vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-title {
+    font-size: 30px;
+  }
+
+  .hero h2 {
+    font-size: 30px;
   }
 
   .hero-text {
