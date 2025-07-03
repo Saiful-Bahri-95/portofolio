@@ -102,9 +102,11 @@ const projectsByTheme = {
 const projects = projectsByTheme[theme] || [];
 const container = document.getElementById("project-container");
 
-projects.forEach(project => {
+projects.forEach((project, index) => {
+  const delay = index * 0.4; // Delay for animation effect
   const card = document.createElement("div");
   card.className = "card";
+  card.style.animationDelay = `${delay}s`;
   card.innerHTML = `
     <img src="${project.image}" alt="${project.title}">
     <div class="card-content">
