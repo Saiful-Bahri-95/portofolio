@@ -46,6 +46,7 @@ https://templatemo.com/tm-578-first-portfolio
 body {
     background: var(--white-color);
     font-family: var(--body-font-family); 
+    overflow-x: hidden;
 }
 
 
